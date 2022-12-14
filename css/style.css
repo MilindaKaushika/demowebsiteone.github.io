@@ -8,12 +8,13 @@
     font-family: 'Poppins', sans-serif; 
 }
 :root{
-    --bgcolor: #000000;
+    --bgcolor: #fff;
     --pcolor: #fff;
 }
 
 body{
-
+background: var(--bgcolor);
+color: var(--pcolor);
 }
 
 header{
@@ -28,6 +29,12 @@ align-items: center;
 justify-content: space-between;
 background: transparent;
 transition: all .45s ease;
+}
+
+header.sticky{
+background-color: #d8284e;
+border-bottom: 2px solid #ffffff1a;
+padding: 12px 11%;
 }
 
 .logo{
@@ -46,6 +53,11 @@ color: #ffd000;
 .naverbar li{
 position: relative;
 }
+
+.nav-list i:hover{
+transform: scale(0.9);
+}
+
 .naverbar a{
     font-size: 16px;
     color: #ffff;
@@ -70,6 +82,10 @@ position: relative;
     width: 100%;
 }
 
+.naverbar a.active{
+    color: #ffd000;
+}
+
 .nav-list{
     display: flex;
     align-items: center;
@@ -84,6 +100,7 @@ position: relative;
     color: #ffffff;
     z-index: 10001;
     cursor: pointer;
+    display: none;
 }
 
 /* Home topic name */
@@ -107,13 +124,15 @@ section{
     color: var(--pcolor);
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 .home-text h1{
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff;
+    line-height: 1.11;
+    margin-bottom: 30px;
+    color: #ffd000;
 }
 .home-text p {
     color: #fff;
@@ -121,8 +140,22 @@ section{
     font-size: 14px;
     max-width: 460px;
     line-height: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .home-text span{
     font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    padding: 16px 33px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    transition: ease .30s;
+}
+.btn:hover{
+    transform: translateY(-10px);
 }
