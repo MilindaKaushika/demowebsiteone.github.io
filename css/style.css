@@ -1,20 +1,20 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    list-style: none;
-    font-family: 'Poppins', sans-serif; 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+scroll-behavior: smooth;
+list-style: none;
+font-family: 'Poppins', sans-serif; 
 }
 :root{
-    --bgcolor: #f9f9ff;
-    --text-color: #35404e;
-    --second-color: #685f78;
-    --main-color:#f66962;
-    --big-font:3.6rem;
-    --h2-font:2.26rem;
-    --p-font:1.1rem;
+--bgcolor: #f9f9ff;
+--text-color: #35404e;
+--second-color: #685f78;
+--main-color:#f66962;
+--big-font:3.6rem;
+--h2-font:2.26rem;
+--p-font:1.1rem;
 }
 
 body{
@@ -53,8 +53,8 @@ color: #ffd000;
 }
 
 .naverbar{
-    display: flex;
-    align-items: center; 
+display: flex;
+align-items: center; 
 }
 
 .naverbar li{
@@ -62,132 +62,198 @@ position: relative;
 }
 
 .naverbar a{
-    font-size: 16px;
-    color: #ffff;
-    padding: 4px 5px;
-    margin: 0 22px;
-    text-transform: capitalize;
-    transition: all .45s ease;
+font-size: 16px;
+color: #ffff;
+padding: 4px 5px;
+margin: 0 22px;
+text-transform: capitalize;
+transition: all .45s ease;
 }
 
 .naverbar a::after{
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background:#ffd000;
-    left: 0;
-    bottom: -4px;
-    transition: ease .40s;
+content: '';
+position: absolute;
+width: 0%;
+height: 2px;
+background:#ffd000;
+left: 0;
+bottom: -4px;
+transition: ease .40s;
 }
 
 .naverbar a:hover::after{
-    width: 100%;
+width: 100%;
 }
 
 .naverbar a.active{
-    color: #ffd000;
+color: #ffd000;
 }
 
 .nav-list{
-    display: flex;
-    align-items: center;
+display: flex;
+align-items: center;
 }
 .nav-list i{
-    font-size: 28px;
-    margin-right: 25px;
-    color: #ffffff;
+height: 45px;
+width: 45px;
+font-size: 22px;
+margin-right: 25px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+padding: 10px;
+background: var(--bgcolor);
+color: var(--second-color);
+transition: all .45s ease;
 }
 .nav-list i:hover{
-    transform: scale(0.9);
+transform: scale(0.9);
 }
 #menu-icon{
-    font-size: 35px;
-    color: #ffffff;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
+font-size: 35px;
+color: #ffffff;
+z-index: 10001;
+cursor: pointer;
+/* display: none; */
 }
 
-/* Home topic name */
+/* Home topic name and banner*/
 
 section{
-    padding: 120px 11%;
+padding: 5% 11%;
 }
 .home{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/slider5.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+width: 100%;
+height: 100vh;
+background-image: url(../img/slider5.jpg);
+background-size: cover;
+background-position: center;
+position: relative;
+align-items: center;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 2rem;
 }
-.home-text h4{
-    color: var(--bgcolor);
-    font-size: 1.4rem;
-    font-weight: 500;
-    margin-bottom: 15px;
+.slide{
+margin-bottom: 15px;
 }
+.one{
+display: inline-block;
+margin-right: 20px;
+font-size: 20px;
+font-weight: 500;
+color: #fff;
+}
+.two{
+display: inline-block;
+padding: 0 15px;
+line-height: 32px;
+color: var(--bgcolor);
+background: #000000;
+font-size: 20px;
+font-weight: 500;
+border-radius: 5px;
+}
+
 .home-text h1{
-    font-size: var(--big-font);
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.11;
-    margin-bottom: 25px;
-    color: #ffd000;
+font-size: var(--big-font);
+text-transform: uppercase;
+font-weight: 700;
+line-height: 1.11;
+margin-bottom: 25px;
+color: #ffd000;
 }
 .home-text p {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: var(--p-font);
-    max-width: 100%;
-    width: 430px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+color: #fff;
+font-size: var(--p-font);
+max-width: 100%;
+width: 430px;
+line-height: 1.8;
+margin-bottom: 20px;
 }
 .home-text span{
-    font-weight: bold;
+font-weight: bold;
 }
 .btn{
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 30px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-    transition: ease .30s;
+display: inline-block;
+padding: 10px 30px;
+font-size: 14px;
+font-weight: 600;
+color: #fff;
+border-radius: 30px;
+border: 2px solid #fff;
+text-transform: uppercase;
+transition: ease .30s;
 }
 .btn:hover{
-    transform: translateY(-10px);
+transform: translateY(-10px);
 }
 
-/* Start services */
-.heading{
-text-align: center;
-}
-.heading h2{
-    font-size: var(--h2-font);
-    color: var(--main-color);
+/* About Us details */
+
+.about{
+background:url();
+background-size: cover;
+background-position: center;
+display: grid;
+grid-template-columns: repeat(2,2fr);
+align-items: center;
+gap: 3rem;
 }
 
-.service-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-top: 2rem;
+.about img{
+width: 100%;
+height: auto;
 }
-.row{
-    padding: 60px 45px;
-    background: white;
-    border-radius: 10px;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    box-shadow: rgba(0,0,0,0.04) 0px 3px 5px;
+
+.about h2{
+margin: 15px 0 15px;
+font-size: var(--h2-font);
+text-transform: capitalize;
+line-height: 1.1;
+}
+
+.about h3{
+color: var(--main-color);
+text-transform: capitalize;
+font-size: 25px;
+font-weight: 600;
+}
+
+.about p{
+color: var(--text-color);
+font-size: 1rem;
+line-height: 27px;
+font-weight: 400;
+margin-bottom: 30px;
+}
+
+.about .btn{
+display: inline-block;
+padding: 10px 30px;
+color: #f9f9ff;
+background-color: #cd1a3e;
+border-radius: 30px;        
+}
+
+/* Nike banner */
+
+.banner{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+grid-gap: 2rem;
+align-items: center;
+}
+.banner-img{
+overflow: hidden;
+}
+.banner-img img{
+width: 100%;
+display: block;
+transition: transform 0.5s;
+cursor: pointer;
+}
+.banner-img:hover img{
+transform: scale(1.1)
 }
