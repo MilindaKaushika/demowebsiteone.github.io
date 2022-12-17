@@ -8,13 +8,18 @@
     font-family: 'Poppins', sans-serif; 
 }
 :root{
-    --bgcolor: #fff;
-    --pcolor: #fff;
+    --bgcolor: #f9f9ff;
+    --text-color: #35404e;
+    --second-color: #685f78;
+    --main-color:#f66962;
+    --big-font:3.6rem;
+    --h2-font:2.26rem;
+    --p-font:1.1rem;
 }
 
 body{
 background: var(--bgcolor);
-color: var(--pcolor);
+color: var(--text-color);
 }
 
 header{
@@ -42,9 +47,11 @@ font-size: 25px;
 color: #ffff;
 font-weight: bold;
 }
+
 .logo span{
 color: #ffd000;
 }
+
 .naverbar{
     display: flex;
     align-items: center; 
@@ -52,10 +59,6 @@ color: #ffd000;
 
 .naverbar li{
 position: relative;
-}
-
-.nav-list i:hover{
-transform: scale(0.9);
 }
 
 .naverbar a{
@@ -95,6 +98,9 @@ transform: scale(0.9);
     margin-right: 25px;
     color: #ffffff;
 }
+.nav-list i:hover{
+    transform: scale(0.9);
+}
 #menu-icon{
     font-size: 35px;
     color: #ffffff;
@@ -121,33 +127,34 @@ section{
     gap: 2rem;
 }
 .home-text h4{
-    color: var(--pcolor);
-    font-size: 18px;
+    color: var(--bgcolor);
+    font-size: 1.4rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .home-text h1{
-    font-size: 48px;
+    font-size: var(--big-font);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.11;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: #ffd000;
 }
 .home-text p {
     color: #fff;
     text-transform: uppercase;
-    font-size: 14px;
-    max-width: 460px;
-    line-height: 28px;
-    margin-bottom: 30px;
+    font-size: var(--p-font);
+    max-width: 100%;
+    width: 430px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 .home-text span{
     font-weight: bold;
 }
 .btn{
     display: inline-block;
-    padding: 16px 33px;
+    padding: 10px 30px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
@@ -158,4 +165,29 @@ section{
 }
 .btn:hover{
     transform: translateY(-10px);
+}
+
+/* Start services */
+.heading{
+text-align: center;
+}
+.heading h2{
+    font-size: var(--h2-font);
+    color: var(--main-color);
+}
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.row{
+    padding: 60px 45px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    box-shadow: rgba(0,0,0,0.04) 0px 3px 5px;
 }
