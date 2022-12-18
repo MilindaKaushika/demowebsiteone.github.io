@@ -115,7 +115,7 @@ font-size: 35px;
 color: #ffffff;
 z-index: 10001;
 cursor: pointer;
-/* display: none; */
+display: none;
 }
 
 /* Home topic name and banner*/
@@ -197,12 +197,13 @@ background:url();
 background-size: cover;
 background-position: center;
 display: grid;
-grid-template-columns: repeat(2,2fr);
+grid-template-columns: repeat(2, 1fr);
 align-items: center;
-gap: 3rem;
+gap: 1.5rem;
 }
 
-.about img{
+.about-img img{
+max-width: 530px;    
 width: 100%;
 height: auto;
 }
@@ -256,4 +257,83 @@ cursor: pointer;
 }
 .banner-img:hover img{
 transform: scale(1.1)
+}
+
+/* Resoponsive design */
+@media (max-width: 1480px){
+header{
+    padding: 20px 2.5%;
+    transition: .4s
+}
+header.sticky{
+    padding: 10px 2.5%;
+    transition: .4s
+    }
+section{
+    padding: 110px 3% 60px;
+}      
+}
+
+@media (max-width: 920px){
+        .about{
+            grid-template-columns: 1fr;
+        }
+        .about-img{
+            text-align: center;
+            order: 2;
+        }
+        .about-img img{
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+}
+
+@media (max-width: 840px){
+    #menu-icon{
+        display: block;
+    }
+    .naverbar{
+        position: absolute;
+        height: auto;
+        padding: 100px 30px;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #d8284e;
+        text-align: left;
+        transition: all .45s ease;
+    }
+    .naverbar a{
+        display: block;
+        font-size: 20px;
+        margin: 17px;
+        transition: all .45s ease;
+        color: #f9f9ff;
+    }
+    .naverbar a:hover{
+        color: #ffd000;
+    }
+    .naverbar a.active{
+        color: #f9f9ff;
+    }
+    .naverbar.open{
+       top:100%; 
+    }
+}
+
+@media (max-width: 640px){
+    .home-text h1{
+        font-size: 35px;
+        transition: .4s;
+        }
+        .home-text p {
+        max-width: 100%;
+        width: 300px;
+        transition: .4s;
+        }
+    
 }
