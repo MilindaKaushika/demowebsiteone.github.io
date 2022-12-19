@@ -221,7 +221,7 @@ font-weight: 600;
 .about p{
 color: var(--second-color);
 font-size: 18px;
-line-height: 30px;
+line-height: 25px;
 font-weight: 400;
 margin-bottom: 30px;
 }
