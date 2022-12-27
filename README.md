@@ -1,2 +1,2 @@
 # Demowebsiteone
-This for the demo shose website using HTML, CSS languages.
+This for the demo full responsive shose website using HTML, CSS and javascript languages.
